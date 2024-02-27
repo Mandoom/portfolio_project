@@ -1,27 +1,29 @@
-body {
+body { /* tipografia global*/
     font-family:"Montserrat", sans-serif;
     background-color:#0a0a0a;
     color:whitesmoke;
 }
 
-li {
+li { /*eliminar estilos de lista*/
     list-style: none;
 }
 
-a {
+a { /*eliminar decoracion de lnks y dar color*/
     text-decoration: none;
     color:whitesmoke;
 }
 
-h1, h2, h3 { 
+h1, h2, h3 {  /*color de multiples tamaños de header + anchura de tipografia*/
     font-weight: 800;
     color:#fa7e00;
 }
 
-h4, h5, h6 {
+h4, h5, h6 { /*anchura de tamaños de heading*/
     font-weight:700;
 }
-.hero-title {
+
+/******* HERO SECTION STYLES (HOME PAGE FULL SCREEN) ********/
+.hero-title { 
     text-align:center;
 }
 .hero-paragraph {
