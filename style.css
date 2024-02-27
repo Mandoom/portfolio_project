@@ -21,6 +21,12 @@ h1, h2, h3 {
 h4, h5, h6 {
     font-weight:700;
 }
+.hero-title {
+    text-align:center;
+}
+.hero-paragraph {
+    text-align:center;
+}
 
 .title {
  text-align:center;
