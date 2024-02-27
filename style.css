@@ -1,3 +1,27 @@
 body {
     font-family:"Montserrat", sans-serif;
+    background-color:#0a0a0a;
+    color:whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+h1, h2, h3 { 
+    font-weight: 800;
+    color:#fa7e00;
+}
+
+h4, h5, h6 {
+    font-weight:700;
+}
+
+.title {
+ text-align:center
 }
