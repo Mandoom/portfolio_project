@@ -26,36 +26,39 @@
       </nav>
 
     <main> <!-- contenido principal del page-->
-      <section id="hero" class="full-hero">  <!-- Seccion de altura de pantalla entera -->
-        <h1 class="hero-title">Creando futuro del internet</h1>
-        <p class="hero-paragraph">
-          Me enfoco en crear soluciones tecnologicas basadas en las necesidades
-          de tus usuarios para mejorar el rendimiento de tu empresa.
-        </p>
-        <a href="" class="hero-link" id="hl1">Services</a><a href="" class="hero-link" id="hl2">My Work </a>
-        <img src="images/web-developer.png" alt="" />
+      <section id="hero" class="heroFullScreen heroBackground">  <!-- VH controlled section for full screen hero -->
+        <div class="heroContent"> <!--Group text elements. this container grows flex-grow-->
+          <h1 class="heroTitle">HI, I'M ARMANDO DOMINGUEZ</h1>
+          <p class="heroParagraph">Web designer & developer focused on building the front end of the internet. Working hand in hand with clients in a user center approach to make sure your website fullfill the needs of your visitors.</p>
+          <div class="heroLinksContainer"> <!--Container to make hero links sit side by side-->
+            <a href="" class="heroLink" >Services</a>
+            <a href="" class="heroLink" >My Work </a>
+          </div>
+         
+        </div>
+       
+        <img class="scrollIcon" src="/images/1214978_mouse_scroll_icon-2.svg" alt="" />
       </section>
     </main>
 
     <footer>
  
         <div class="credits">
-          <p class="small-title">Armando Dominguez</p>
+          <p class="smallTitle">Armando Dominguez</p>
           <p>Wordpress | Webflow | Front-end</p>
         </div>
-        <div class="links">
-            <p class="small-title">Links</p>
+        <div class="footerSocialLinks">
             <ul>
               <li>
-                <a href="https://dribbble.com/armando-dominguez">Dribble</a>
+                <a href="https://dribbble.com/armando-dominguez"><img src="images/dribbleicon.webp" alt="Dribble Profile Link"></a>
               </li>
               <li>
-                <a href="https://www.behance.net/armandoppw93c1">Behance</a>
+                <a href="https://www.behance.net/armandoppw93c1"><img src="images/behanceicon.webp" alt="Behance Profile Link"></a>
               </li>
               <li>
-                <a href="https://www.upwork.com/freelancers/~0101a5ba6a102489f6?viewMode=1">Upwork</a>
+                <a href="https://www.upwork.com/freelancers/~0101a5ba6a102489f6?viewMode=1"><img src="images/upworkicon.webp" alt="Upwork Profile Link"></a>
               </li>
-              <li><a href="#">Wordpress</a></li>
+       
             </ul>
           </div>
         </div>

@@ -5,6 +5,8 @@
     
 }
 a { text-decoration:none;}
+img {max-width:100%;}
+li {list-style-type: none;}
 
 
 /*Mobile first Approach*/
@@ -25,6 +27,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px 5%;
     align-items: center;
     border-bottom:1px solid #f5f5f52a;
+    background-color:black;
   
 }
 
@@ -43,4 +46,95 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     gap: 10px;
     list-style-type: none;
+}
+
+
+/*Main Styles*/
+
+
+section {
+    padding: 30px 5%;
+
+}
+/*Hero Section*/
+.heroFullScreen {
+    display:flex;
+    flex-direction: column;
+    height:80vh;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.heroBackground {
+    background-image: url(images/vertical-decor-small.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+
+}
+
+.heroContent{ /*Makes the hero content container a flex box and makes it grow to fill the space not taken by the scroll icon*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow:1;
+    gap:15px;
+}
+.heroTitle {
+    font-size:45px;
+    line-height:53px;
+    font-weight:800;
+    text-align: center;
+}
+
+.heroParagraph {
+    font-size:18px;
+    line-height:26px;
+    text-align:center;
+
+}
+
+.scrollIcon {
+    width:80px;
+    justify-self: end;
+    text-align:center;
+
+}
+
+.heroLinksContainer {
+    display:flex;
+    justify-content: center;
+    gap:15px;
+
+}
+
+.heroLink {
+    border:2px solid #f5853f;
+    color:#f5853f;
+    padding:13px 20px;
+    font-size:20px;
+
+}
+
+/*Footer*/
+
+footer {
+    text-align:center;
+    padding: 20px 5%;
+    background-color:black;
+}
+.credits {
+    margin-bottom:30px;
+}
+
+
+.footerSocialLinks ul {
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialLinks ul li a img {
+max-width:30px;
 }
