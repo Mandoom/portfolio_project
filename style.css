@@ -48,6 +48,10 @@ h1,h2,h3,h4,h5,h6 {
     list-style-type: none;
 }
 
+.navSocialLinks {
+    display:none;
+}
+
 
 /*Main Styles*/
 
@@ -137,4 +141,61 @@ footer {
 
 .footerSocialLinks ul li a img {
 max-width:30px;
+}
+
+/*** Vertical Navigation Layout for Tabs and Larger Screens) ***/
+
+@media all and (min-width:767px) {
+
+    .layoutContainer {
+        display:flex;
+
+    }
+
+    .navContainer {
+
+        width:100px;
+        flex-grow:0;
+        height:100vh;
+        overflow:hidden;
+        background-color:black;
+    }
+    .mainContainer {
+        flex: 1;
+    }
+
+    .navigationMenu {
+        flex-direction:column;
+        height:100%;
+    }
+ 
+    .navSocialLinks {display:block;}
+
+    .navSocialLinks ul {
+        display:flex;
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .navSocialLinks ul li a img {
+        max-width:25px;
+    }
+    .menu {
+        flex-grow:0.5;
+        flex-direction:column;
+        justify-content: space-around;
+        flex-basis:300px;
+    }
+
+    .menu li  {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        font-size:18px;
+        line-height:18px;
+
+    }
 }
