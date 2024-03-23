@@ -154,19 +154,24 @@ max-width:30px;
 
     .navContainer {
 
-        width:100px;
+        width:90px;
         flex-grow:0;
-        height:100vh;
-        overflow:hidden;
+        height:100vh; /* Make the element full height of the screen */
+        /* overflow:hidden; prevent elements*/
         background-color:black;
+        position:fixed
+
     }
     .mainContainer {
-        flex: 1;
+        flex: 1; /* Take all available space*/
+        padding-left:90px; /* Adjust spacing for content on the side of the nav*/
     }
 
     .navigationMenu {
-        flex-direction:column;
-        height:100%;
+        flex-direction:column; /*make nav  a column*/
+        height:100%; /* take full available height*/
+        padding:10px 10px;
+      
     }
  
     .navSocialLinks {display:block;}
@@ -181,10 +186,10 @@ max-width:30px;
         max-width:25px;
     }
     .menu {
-        flex-grow:0.5;
+       /* flex-grow:0.5; */ /* poor implementation with using flex*/
         flex-direction:column;
         justify-content: space-around;
-        flex-basis:300px;
+        /* flex-basis:300px;*/ /* poor implementation with using flex*/
     }
 
     .menu li  {
@@ -192,10 +197,17 @@ max-width:30px;
         flex-direction:column;
         align-items:center;
         justify-content: center;
-        transform: rotate(-90deg);
-        transform-origin: center;
-        font-size:18px;
-        line-height:18px;
+        -webkit-writing-mode: vertical-lr; /*Make text vertical reads top to bottom*/
+        -ms-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg); /*rotate menu items text so it reads from the bottom up*/
+        font-size:16px;
+        line-height:16px;
 
+    }
+
+    .menu li a {
+        padding:13px 20px;
+   
     }
 }
