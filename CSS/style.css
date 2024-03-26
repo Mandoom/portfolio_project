@@ -110,7 +110,7 @@ section {
 .heroFullScreen {
     display:flex;
     flex-direction: column;
-    height:calc(100vh - 90px);
+    height:100vh;
     justify-content: space-around;
     align-items: flex-start;
 
@@ -118,7 +118,6 @@ section {
 .heroHalfScreen {
     display:flex;
     flex-direction: column;
-  
     justify-content: space-around;
     align-items: center;
 
@@ -303,6 +302,10 @@ max-width:30px;
 
 
 @media all and (min-width:767px) {
+
+    main {
+        padding-top: 0px; /*remove the padding we added in mobile to fix the alignment issues with "position:fixed" for nav bar*/
+    }
     /************************************ Vertical Navigation Layout for Tabs and Larger Screens) ***/
 
     .layoutContainer {
@@ -405,9 +408,26 @@ max-width:30px;
 
     /************************************ Vertical Navigation Layout for Tabs and Larger Screens) ***/
 
+    .heroBackground {
+        background-image: url(../images/hero-background.webp);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .heroHalfScreen {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
     .section { 
         padding-top:60px;
         padding-bottom:60px;
+    }
+
+    .sectionTitle { 
+        text-align:center;
     }
     
 
@@ -432,8 +452,33 @@ max-width:30px;
         column-gap: 20px;
     }
     
+    .colContainer {
+        display:flex;
+        gap:15px;
+        align-items: center;
+    }
 
+    .column {
+        flex-basis:50%;
+    }
+    .experienceBlock {display:flex;}
+    .card.experienceCard {
+        flex-basis: 50%;
+    }
 
+    .emptyColumn {
+        flex-basis:50%;
+    }
+
+    .portfolioGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .portfolioGrid .projectContainer {
+        flex-direction:column;
+        margin-bottom:30px;
+    }
 }
 
 
