@@ -155,7 +155,7 @@ section {
 
 }
 
-.heroLink {
+.linkButton {
     border:2px solid #f5853f;
     color:#f5853f;
     padding:13px 20px;
@@ -175,6 +175,15 @@ section {
 .projectTitle {
     font-size:30px;
     font-weight:800;
+}
+
+.projectTags {
+    margin-bottom:30px;
+}
+
+.projectTag {
+    opacity:0.7;
+    
 }
 
 
@@ -340,8 +349,41 @@ max-width:30px;
 
     /************************************ Vertical Navigation Layout for Tabs and Larger Screens) ***/
 
+    .section { 
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+    
+
+    .projectContainer {
+        display:flex;
+        align-items: center;
+    }
+
+    .projectImageContainer {
+        flex-basis:50%;
+        flex-grow:1;
+        flex-shrink:0;
+    }
+    .projectContentContainer {
+        flex-grow:1;
+    }
 
 
+    .testimonialsCardsContainer {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    
+
+    .clearBackground {
+        background-color:#f5f5f5;
+
+    }
+    .clearBackground p {
+        color:#1f1f1f;
+    }
 }
 
 
