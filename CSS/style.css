@@ -79,7 +79,7 @@ p {
 
 
 .navbar-toggler .navbar-toggler-icon {
-    background-image: url(images/hamburguerIcon.webp);
+    background-image: url(../images/hamburguerIcon.webp);
 }
 
 .navbar-toggler:focus {
@@ -113,7 +113,7 @@ section {
 
 }
 .heroBackground {
-    background-image: url(images/vertical-decor-small.webp);
+    background-image: url(../images/vertical-decor-small.webp);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
