@@ -64,110 +64,130 @@
       </div>
       <div class="mainContainer">
         <main>
-            <section id="hero" class="full-hero">
-                <h1 class="hero-title">About</h1>
-                <p class="hero-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                <a href="" class="hero-link" id="hl1">Services</a><a href="" class="hero-link" id="hl2">My Work </a>
+            <section id="hero" class="heroHalfScreen">
+              <div class="heroContent container">
+                <!--Group text elements. this container grows flex-grow-->
+                <h1 class="heroTitle">About</h1>
+                <p class="heroParagraph"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veritatis at quibusdam molestiae similique odio expedita incidunt nobis maiores atque ipsam vel ipsa delectus quasi in veniam temporibus, laudantium quod?</p>
+                <div class="heroLinksContainer">
+                  <!--Container to make hero links sit side by side-->
+                  <a href="" class="linkButton">Services</a>
+                  <a href="" class="linkButton">My Work </a>
+                </div>
+              </div>
             </section>
-            <section class="about section"> 
+            <section class="about section clearBackground"> 
                 <div class="container">
                     <div class="column"><!-- Columna ira a la derecha -->
-                        <h2 class="title">How i can help you</h2>
+                        <h2 class="title">How I can help you</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, </p>
                         <p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div>
                     <div class="column"> <!-- columna ira a la izquierda-->
                         <h2 class="title">Skills</h2>
-                        <div> <!-- Spans puestos en una sola linea para reflejar como se comportaran en el front end. es bad practice? -->
-                            <span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span><span class="skill-tag">Lorem</span>
+                        <div class="skillTags"> <!-- Spans puestos en una sola linea para reflejar como se comportaran en el front end. es bad practice? -->
+                            <span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span><span class="skillTag">Lorem</span>
                         </div>
                         <h2 class="title">Technologies</h2>
                         <ul class="technologyIconList">
-                            <li class="technologyIcon"><img src="#" alt="html5-icon"></li>
-                            <li class="technologyIcon"><img src="#" alt="css-icon"></li>
-                            <li class="technologyIcon"><img src="#" alt="wp-icon"></li>
-                            <li class="technologyIcon"><img src="#" alt="wf-icon"></li>
-                            <li class="technologyIcon"><img src="#" alt="cogs-icon"></li>
+                            <li class="technologyIcon"><img src="/images/htmlIcon.png" alt="html5-icon"></li>
+                            <li class="technologyIcon"><img src="/images/cssICON.png" alt="css-icon"></li>
+                            <li class="technologyIcon"><img src="/images/jsIcon.png" alt="wp-icon"></li>
+                            <li class="technologyIcon"><img src="/images/wordpressIcon.png" alt="wf-icon"></li>
+                            <li class="technologyIcon"><img src="/images/webflowIcon.png" alt="cogs-icon"></li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section class="experience section">
-                <h2>Experience</h2>
+                <h2 class="title">Experience</h2>
                 <div class="experienceCardsContainer"><!-- contenedor para las cards-->
                     <div class="experienceBlockLeft">
-                        <div class="experienceCard">
+                        <div class="card experienceCard">
                             <div class="experinceCardHeader">
                                 <img src="" alt="">
-                                <p class="experienceCardCompanyName">Company Name</p>
+                                <p class="cardTitle experienceCardCompanyName">Company Name</p>
                                 <p class="expereinceCardDates">00/00/0000 - 00/00/000</p>
                             </div>
                             <div class="experienceCardContent">
-                                <p class="experienceCardText"><span>Responsibilities</span></p>
-                                <p class="experienceCardText"><span>Results:</span></p>
-                            </div>
+                              <p class="experienceCardText"><span>Responsibilities:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias, pariatur mollitia assumenda aspernatur aliquam magni non nulla quae placeat ullam quaerat ab incidunt aperiam! Ullam maxime consequuntur officiis est.</p>
+                              <p class="experienceCardText"><span>Results:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas iste, est exercitationem rerum dolores iusto fugit molestias dolorem reiciendis saepe atque cum, consequuntur distinctio vero recusandae inventore corrupti doloribus dicta.</p>
+                          </div>
                         </div>
                     </div>
                     <div class="experienceBlockRight">
-                        <div class="experienceCard">
+                        <div class="card experienceCard">
                             <div class="experinceCardHeader">
                                 <img src="" alt="">
-                                <p class="experienceCardCompanyName">Company Name</p>
+                                <p class="cardTitle experienceCardCompanyName">Company Name</p>
                                 <p class="expereinceCardDates">00/00/0000 - 00/00/000</p>
                             </div>
                             <div class="experienceCardContent">
-                                <p class="experienceCardText"><span>Responsibilities</span></p>
-                                <p class="experienceCardText"><span>Results:</span></p>
-                            </div>
+                              <p class="experienceCardText"><span>Responsibilities:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias, pariatur mollitia assumenda aspernatur aliquam magni non nulla quae placeat ullam quaerat ab incidunt aperiam! Ullam maxime consequuntur officiis est.</p>
+                              <p class="experienceCardText"><span>Results:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas iste, est exercitationem rerum dolores iusto fugit molestias dolorem reiciendis saepe atque cum, consequuntur distinctio vero recusandae inventore corrupti doloribus dicta.</p>
+                          </div>
                         </div>
                     </div>
                     <div class="experienceBlockLeft">
-                        <div class="experienceCard">
+                        <div class="card experienceCard">
                             <div class="experinceCardHeader">
                                 <img src="" alt="">
-                                <p class="experienceCardCompanyName">Company Name</p>
+                                <p class="cardTitle experienceCardCompanyName">Company Name</p>
                                 <p class="expereinceCardDates">00/00/0000 - 00/00/000</p>
                             </div>
                             <div class="experienceCardContent">
-                                <p class="experienceCardText"><span>Responsibilities</span></p>
-                                <p class="experienceCardText"><span>Results:</span></p>
-                            </div>
+                              <p class="experienceCardText"><span>Responsibilities:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias, pariatur mollitia assumenda aspernatur aliquam magni non nulla quae placeat ullam quaerat ab incidunt aperiam! Ullam maxime consequuntur officiis est.</p>
+                              <p class="experienceCardText"><span>Results:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas iste, est exercitationem rerum dolores iusto fugit molestias dolorem reiciendis saepe atque cum, consequuntur distinctio vero recusandae inventore corrupti doloribus dicta.</p>
+                          </div>
                         </div>
                     </div>
                     <div class="experienceBlockRight">
-                        <div class="experienceCard">
+                        <div class="card experienceCard">
                             <div class="experinceCardHeader">
                                 <img src="" alt="">
-                                <p class="experienceCardCompanyName">Company Name</p>
+                                <p class="cardTitle experienceCardCompanyName">Company Name</p>
                                 <p class="expereinceCardDates">00/00/0000 - 00/00/000</p>
                             </div>
                             <div class="experienceCardContent">
-                                <p class="experienceCardText"><span>Responsibilities</span></p>
-                                <p class="experienceCardText"><span>Results:</span></p>
+                                <p class="experienceCardText"><span>Responsibilities:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias, pariatur mollitia assumenda aspernatur aliquam magni non nulla quae placeat ullam quaerat ab incidunt aperiam! Ullam maxime consequuntur officiis est.</p>
+                                <p class="experienceCardText"><span>Results:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas iste, est exercitationem rerum dolores iusto fugit molestias dolorem reiciendis saepe atque cum, consequuntur distinctio vero recusandae inventore corrupti doloribus dicta.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="testimonials section">
-                <h2 class="title">Testimonials</h2>
+              <div class="testimonialsHeadingContainer">
+                <h2 class="title">
+                  <span class="smallHeadingText">Testimonials</span>
+                  <br>From Past Clients
+                </h2>
+              </div>
                 <div class="testimonialsCardsContainer">
-                    <div class="testimonialCard">
-                        <p class="testimonialName">Jon Doe</p>
-                        <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas"</p>
+                  <div class="card testimonialCard">
+                    <div class="testimonialStars">
+                      <img src="/images/quopteicon.webp" alt="">
+                      <img src="/images/starsicon.webp" alt="" class="quoteStars">
                     </div>
-                    <div class="testimonialCard">
-                        <p class="testimonialName">Jon Doe</p>
-                        <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas"</p>
+                    <p class="cardTitle testimonialName">Jon Doe</p>
+                    <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas sed us perspiciatis"</p>
+                  </div>
+                  <div class="card testimonialCard">
+                    <div class="testimonialStars">
+                      <img src="/images/quopteicon.webp" alt="">
+                      <img src="/images/starsicon.webp" alt="" class="quoteStars">
                     </div>
-                    <div class="testimonialCard">
-                        <p class="testimonialName">Jon Doe</p>
-                        <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas"</p>
+                    <p class="cardTitle testimonialName">Jon Doe</p>
+                    <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas sed us perspiciatis"</p>
+                  </div>
+                  <div class="card testimonialCard">
+                    <div class="testimonialStars">
+                      <img src="/images/quopteicon.webp" alt="">
+                      <img src="/images/starsicon.webp" alt="" class="quoteStars">
                     </div>
-                    <div class="testimonialCard">
-                        <p class="testimonialName">Jon Doe</p>
-                        <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas"</p>
-                    </div>
+                    <p class="cardTitle testimonialName">Jon Doe</p>
+                    <p class="testimonialContent">"Lorem Ipsum dolor sit amet consectetur aeneas sed us perspiciatis"</p>
+                  </div>
                 </div>
             </section>
         </main>
