@@ -1,1 +1,15 @@
 @use '../abstracts' as *;
+
+body {
+    background-color:white;
+    @include respond-to('md') {
+        background-color:red;
+    }
+}
+
+.nav {
+    background-color:red;
+    @include respond-to('md') {
+        background-color:black;
+    }
+} 
