@@ -4,16 +4,29 @@
 @mixin respond-to ($breakpoint) {
 
         @if $breakpoint == 'xs' {
-            @media (max-width: variables.$breakpoint-xs) { @content; }
+            @media (mixin: variables.$breakpoint-xs) { @content; }
         } @else if $breakpoint == 'sm' { 
-            @media (max-width: variables.$breakpoint-sm) { @content; }
+            @media (min-width: variables.$breakpoint-sm) { @content; }
         } @else if $breakpoint == 'md' {
-            @media (max-width: variables.$breakpoint-md) { @content; }
+            @media (min-width: variables.$breakpoint-md) { @content; }
         } @else if $breakpoint == 'lg' {
-            @media (max-width: variables.$breakpoint-lg) { @content ;}
+            @media (min-width: variables.$breakpoint-lg) { @content ;}
         }
 
     }
+
+
+
+//mixin for vertical layout nav media queries it is used exclusively to control how the layout shifts from horizontal navbar in small devices to vertical navbar starting on medium devices
+
+@mixin vertical ($breakpoint) {
+
+    @if $breakpoint == 'lg' {
+        @media (min-width: variables.$breakpoint-lg) { @content; }
+    }  
+}
+
+
 
 
     

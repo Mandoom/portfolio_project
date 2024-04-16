@@ -1,1 +1,25 @@
 @use '../abstracts' as *;
+
+/*Footer Styles*/
+
+footer {
+    background-color:black;
+    text-align:center;
+    padding:30px 7%;
+}
+
+footer .socialLinks {
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    margin-bottom:0px;
+    @include vertical (lg) {
+        display:none;
+    }
+
+}
+
+footer .socialLinks li a img {
+    width:30px;
+    
+}

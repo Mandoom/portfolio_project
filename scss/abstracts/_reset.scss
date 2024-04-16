@@ -1,21 +1,46 @@
+@use 'variables';
 /* CSS reset*/
+
 
 body {
     padding:0px;
     margin:0px;
-    a { text-decoration:none;}
-    img {max-width:100%;}
-    li {list-style-type: none;}
+    background-color: variables.$notBlack;
+    color: variables.$notWhite;
+    font-family: "Montserrat", sans-serif;
 }
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
-ul,
-ol {
+img {
+    max-width:100%;
+}
+li {
+    list-style-type: none;
+}
+ul,ol {
     list-style: none;
+}
+
+p {
+    font-size:18px;
+    color: variables.$notWhite;
+}
+
+h1 {
+    font-size:variables.$bigHeading-sm;
+    color:variables.$orange;
+    font-weight:800;
+}
+h2 {
+    font-size:variables.$mediumHeading-sm;
+    color:variables.$orange;
+    font-weight:bold;
+}
+h3 {
+    font-size:variables.$smallHeading-sm;
+    color:variables.$orange;
+    font-weight:bold;
 }

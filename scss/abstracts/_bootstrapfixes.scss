@@ -1,0 +1,18 @@
+/*Bootstrap CSS Fixes*/
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none; /* In case Bootstrap uses box-shadow to create focus styles */
+    border:none;
+  }
+
+  .navbar-toggler {
+    border:none;
+  }
+
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/hamburguerIcon.webp);
+}
+.container {
+    padding:0px;
+}

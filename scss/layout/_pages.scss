@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+/*Page Body Styles*/
+
+.section {
+    padding: 60px 7%;
+    @include vertical (lg) {
+    padding:90px 20px 90px 110px;
+    }
+
+    &.clearBackground {
+        @extend .section;
+        background-color: $notWhite;
+    }
+}
+
+.heroContent {
+    padding: 0px 7%;
+    text-align: center;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    @include vertical (lg) {
+        padding: 0px 0;
+        max-width:750px;
+        margin:0 auto;
+    }
+}
+
+.heroFullScreen {
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scrollIcon {
+    width:100px;
+}
+
+.heroTitle {
+
+    font-size: $bigHeading-sm;
+
+    @include respond-to (md) {
+        font-size: $bigHeading-md;
+    }
+    @include respond-to (lg) {
+        font-size: $bigHeading-lg;
+    }
+    @include respond-to (xl) {
+        font-size: $bigHeading-lg;
+    }
+}
+
