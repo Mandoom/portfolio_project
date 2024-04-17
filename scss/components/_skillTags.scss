@@ -1,0 +1,14 @@
+@use '../abstracts';
+
+.skillTags {
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-bottom:30px;
+
+}
+
+.skillTag {
+    padding:8px 12px; 
+    background-color:#1f1f1f;
+}

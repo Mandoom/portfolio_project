@@ -2,18 +2,20 @@
 
 /*Page Body Styles*/
 
-.section {
+section {
     padding: 60px 7%;
     @include vertical (lg) {
     padding:90px 20px 90px 110px;
     }
 
     &.clearBackground {
-        @extend .section;
+        @extend section;
         background-color: $notWhite;
     }
 }
 
+
+/* hero sections */
 .heroContent {
     padding: 0px 7%;
     text-align: center;
@@ -36,6 +38,17 @@
     align-items: center;
 }
 
+.heroHalfScreen {
+    min-height: 60vh;
+    display:flex;
+    flex-direction: column;
+    .heroContent {
+        max-width:1140px;
+        text-align: left;
+    }
+
+}
+
 .scrollIcon {
     width:100px;
 }
@@ -53,5 +66,90 @@
     @include respond-to (xl) {
         font-size: $bigHeading-lg;
     }
+}
+
+
+/* inner sections */
+
+.title {
+    font-size: $mediumHeading-sm;
+    margin-bottom:20px;
+
+    @include respond-to (md) {
+        font-size: $mediumHeading-md;
+        margin-bottom:30px;
+    }
+    @include respond-to (lg) {
+        font-size: $mediumHeading-lg;
+        margin-bottom:60px;
+    }
+    @include respond-to (xl) {
+        font-size: $mediumHeading-lg;
+        margin-bottom:60px;
+    }
+}
+
+.clearBackground {
+    p {color: black;}
+}
+
+.projectContainer{
+    display:flex;
+    flex-direction: column;
+
+    @include vertical (lg) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectImageContainer {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 0;
+        @include respond-to (lg) {
+            flex-basis:50%
+        }
+    }
+
+    .projectContentContainer {
+
+        flex-grow: 1;
+
+    }
+
+}
+
+/* testimonials section */
+
+span.smallHeadingText {
+    font-size: 24px;
+}
+
+/*side by side sections*/
+
+//50-50
+
+ .colContainer {
+    display:block;
+    margin-bottom:60px;
+    @include respond-to (lg) {
+        display:flex;
+        flex-direction:row;
+        gap:20px
+    }
+
+    .column {flex-basis:100%;
+    @include respond-to (lg) {
+        flex-basis:calc(50% - 10px)
+    }
+    }
+ }
+
+ .technologyIconList {
+    display:flex;
+    padding:0px;
+    gap:10px;
+    align-items: center;
 }
 

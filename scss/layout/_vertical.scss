@@ -94,6 +94,17 @@
 .container {
     max-width:1140px;
     margin: 0 auto;
+
+    @include respond-to (lg) {
+
+        max-width:90%;
+    }
+
+    @include respond-to (xl) {
+        max-width:1140px;
+    }
+
+
 }
 /* lg screen layout with vertical navigation bar fixed to left side */
 

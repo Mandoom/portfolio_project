@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.experienceBlock {
+    display:flex;
+    flex-direction:column;
+    @include respond-to(lg) {
+        flex-direction:row;
+    }
+
+    .emptyColumn {
+        flex-basis:100%;
+        @include respond-to(lg) {
+        flex-basis:50%;
+
+        }
+    }
+
+    .card.experienceCard {
+        flex-basis: 100%;
+        p {
+            color:#1f1f1f;
+        }
+
+      
+        
+        @include respond-to(lg) {
+            flex-basis:50%;
+        }
+    }
+
+    .card {
+        &.experienceCard {
+            @extend .card ;
+                .cardTitle { color:$orange;}
+            
+        }
+    }
+}
+
+
+.expereinceCardDates {
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+
+
+

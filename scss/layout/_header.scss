@@ -41,8 +41,14 @@
 
         color: $notWhite;
         padding: 8px 5px;
+        transition: all 0.7s ease-in-out;
         @include vertical (lg) {
             padding: 13px 20px;
+        }
+
+        &:hover {
+            background-color: $orange;
+            transition: all 0.7s ease-in-out;
         }
 
     
@@ -61,6 +67,7 @@
         @include vertical (lg) {
         color: $notWhite;
         }
+    
     }
     
 }

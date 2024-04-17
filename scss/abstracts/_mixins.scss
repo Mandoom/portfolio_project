@@ -11,6 +11,8 @@
             @media (min-width: variables.$breakpoint-md) { @content; }
         } @else if $breakpoint == 'lg' {
             @media (min-width: variables.$breakpoint-lg) { @content ;}
+        } @else if $breakpoint == 'xl' {
+            @media (min-width: variables.$breakpoint-xl) { @content ;}
         }
 
     }
