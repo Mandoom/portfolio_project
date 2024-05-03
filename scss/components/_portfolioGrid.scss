@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.portfolioGrid {
+    display:block;
+    @include respond-to(lg) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+
+    }
+}

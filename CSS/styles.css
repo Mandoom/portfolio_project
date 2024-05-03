@@ -387,6 +387,18 @@ span.smallHeadingText {
   align-items: center;
 }
 
+/* Services Section*/
+.servicesSection .colContainer.reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 992px) {
+  .servicesSection .colContainer.reverse {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /*Footer Styles*/
 footer {
   background-color: black;
@@ -410,42 +422,53 @@ footer .socialLinks li a img {
   width: 30px;
 }
 
-.experienceBlock {
+.experienceRow {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.2392156863);
+  padding-top: 20px;
 }
 @media (min-width: 992px) {
-  .experienceBlock {
+  .experienceRow {
     flex-direction: row;
+    gap: 20px;
   }
-}
-.experienceBlock .emptyColumn {
-  flex-basis: 100%;
-}
-@media (min-width: 992px) {
-  .experienceBlock .emptyColumn {
-    flex-basis: 50%;
-  }
-}
-.experienceBlock .card.experienceCard {
-  flex-basis: 100%;
-}
-.experienceBlock .card.experienceCard p {
-  color: #1f1f1f;
-}
-@media (min-width: 992px) {
-  .experienceBlock .card.experienceCard {
-    flex-basis: 50%;
-  }
-}
-.experienceBlock .card.experienceCard .cardTitle {
-  color: #f5853f;
 }
 
-.expereinceCardDates {
-  font-weight: 700;
-  font-size: 14px;
+.experienceCardsContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .experienceCardsContainer {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .experienceCardsContainer {
+    max-width: 765px;
+    margin-left: 0px;
+  }
+}
+
+.companyDates {
   opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.companyLogo {
+  max-width: 80px;
+}
+@media (min-width: 1200px) {
+  .companyLogo {
+    flex: 0 0 60px;
+  }
+}
+
+.companyLogo img {
+  max-width: 100%;
 }
 
 .testimonialsCardsContainer {
@@ -508,6 +531,17 @@ footer .socialLinks li a img {
 .skillTag {
   padding: 8px 12px;
   background-color: #1f1f1f;
+}
+
+.portfolioGrid {
+  display: block;
+}
+@media (min-width: 992px) {
+  .portfolioGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

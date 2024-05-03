@@ -153,3 +153,16 @@ span.smallHeadingText {
     align-items: center;
 }
 
+
+
+/* Services Section*/
+
+.servicesSection .colContainer.reverse {
+    display:flex;
+    flex-direction: column-reverse;
+
+    @include respond-to (lg) {
+        display:flex;
+        flex-direction:row;
+}
+}

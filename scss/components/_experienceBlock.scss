@@ -1,47 +1,58 @@
 @use '../abstracts' as *;
 
-.experienceBlock {
+.experienceRow {
     display:flex;
     flex-direction:column;
+    gap:15px;
+    border-bottom: 1px solid #f5f5f53d;
+    padding-top:20px;
     @include respond-to(lg) {
         flex-direction:row;
-    }
-
-    .emptyColumn {
-        flex-basis:100%;
-        @include respond-to(lg) {
-        flex-basis:50%;
-
-        }
-    }
-
-    .card.experienceCard {
-        flex-basis: 100%;
-        p {
-            color:#1f1f1f;
-        }
-
-      
-        
-        @include respond-to(lg) {
-            flex-basis:50%;
-        }
-    }
-
-    .card {
-        &.experienceCard {
-            @extend .card ;
-                .cardTitle { color:$orange;}
-            
-        }
+        gap:20px;
     }
 }
 
+.experienceCardsContainer {
+    max-width:1140px;
+    margin: 0 auto;
 
-.expereinceCardDates {
-    font-weight: 700;
-    font-size: 14px;
+    @include respond-to (lg) {
+
+        max-width:90%;
+    }
+
+    @include respond-to (xl) {
+        max-width:765px;
+        margin-left:0px;
+    }
+
+
+}
+
+.companyDates {
     opacity: 0.6;
+    font-size:16px;
+    margin-bottom:0px;
+
+}
+
+
+.companyLogo{
+   
+    max-width:80px;
+    @include respond-to (xl) {
+       flex: 0 0 60px;
+    }
+
+   
+
+}
+
+
+.companyLogo  img {
+    max-width:100%;
+
+
 }
 
 
