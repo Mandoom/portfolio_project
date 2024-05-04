@@ -155,10 +155,6 @@ span.swiper-pagination-bullet {
   width: 70px;
 }
 
-.mainContainer .topSection {
-  padding-top: 90px;
-}
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -293,6 +289,15 @@ section.clearBackground {
 .heroHalfScreen .heroContent {
   max-width: 1140px;
   text-align: left;
+}
+
+.topSection {
+  padding-top: 130px;
+}
+@media (min-width: 1200px) {
+  .topSection {
+    padding-top: 60px;
+  }
 }
 
 .scrollIcon {

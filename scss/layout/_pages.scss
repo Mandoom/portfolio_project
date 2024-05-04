@@ -55,6 +55,13 @@ section {
 
 }
 
+.topSection {
+    padding-top:130px;
+    @include respond-to(xl) {
+    padding-top: 60px;
+    }
+}
+
 .scrollIcon {
     width:100px;
 }
