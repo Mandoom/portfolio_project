@@ -65,15 +65,25 @@ h3 {
   padding: 0px;
 }
 
+.swiper {
+  padding-bottom: 20px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #f5853f;
+}
+
+span.swiper-pagination-bullet {
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background: #f5853f;
+}
+
 /* layout mobile styles for horizontal navigation bar fixed to the top*/
 .layoutContainer {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 992px) {
-  .layoutContainer {
-    flex-direction: row;
-  }
 }
 .layoutContainer .navContainer {
   position: fixed;
@@ -83,6 +93,7 @@ h3 {
   align-items: center;
   border-bottom: 1px solid rgba(245, 245, 245, 0.1647058824);
   background-color: black;
+  z-index: 2;
 }
 @media (min-width: 992px) {
   .layoutContainer .navContainer {
@@ -266,12 +277,18 @@ section.clearBackground {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-image: url(/images/hero-background.png);
+  background-position: top;
+  background-attachment: fixed;
 }
 
 .heroHalfScreen {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
+  background-image: url(/images/hero-background.png);
+  background-position: top;
+  background-attachment: fixed;
 }
 .heroHalfScreen .heroContent {
   max-width: 1140px;
@@ -299,6 +316,10 @@ section.clearBackground {
   .heroTitle {
     font-size: 70px;
   }
+}
+
+.heroLinksContainer {
+  margin-top: 20px;
 }
 
 /* inner sections */
@@ -353,8 +374,17 @@ section.clearBackground {
 .projectContainer .projectContentContainer {
   flex-grow: 1;
 }
+@media (min-width: 992px) {
+  .projectContainer .projectContentContainer {
+    padding-right: 40px;
+  }
+}
 
 /* testimonials section */
+.testimonialsSection {
+  background-image: url(../../images/bgimageoverlay.webp);
+}
+
 span.smallHeadingText {
   font-size: 24px;
 }

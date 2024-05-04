@@ -36,12 +36,18 @@ section {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-image: url(/images/hero-background.png);
+    background-position: top;
+    background-attachment: fixed;
 }
 
 .heroHalfScreen {
     min-height: 60vh;
     display:flex;
     flex-direction: column;
+    background-image: url(/images/hero-background.png);
+    background-position: top;
+    background-attachment: fixed;
     .heroContent {
         max-width:1140px;
         text-align: left;
@@ -57,6 +63,7 @@ section {
 
     font-size: $bigHeading-sm;
 
+
     @include respond-to (md) {
         font-size: $bigHeading-md;
     }
@@ -65,8 +72,13 @@ section {
     }
     @include respond-to (xl) {
         font-size: $bigHeading-lg;
+
     }
 }
+ .heroLinksContainer {
+    margin-top:20px;
+ }
+
 
 
 /* inner sections */
@@ -115,12 +127,19 @@ section {
     .projectContentContainer {
 
         flex-grow: 1;
+        @include respond-to (lg) {
+            padding-right:40px;
+        }
 
     }
 
 }
 
 /* testimonials section */
+.testimonialsSection {
+    background-image: url(../../images/bgimageoverlay.webp);
+
+}
 
 span.smallHeadingText {
     font-size: 24px;
